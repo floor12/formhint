@@ -22,10 +22,8 @@
   },
   "autoload": {
     "psr-4": {
-      "floor12\\superfile\\": [
-        "src",
-        "src/assets",
-        "src/controllers"
+      "floor12\\formhint\\": [
+        "src"
       ]
     }
   }
