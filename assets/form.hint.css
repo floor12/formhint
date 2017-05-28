@@ -1,0 +1,31 @@
+/**
+ * Created by floor12 on 26.05.2017.
+ */
+
+div.element-description {
+    position: absolute;
+    background-color: rgba(59, 59, 97, 0.91);
+    color: white;
+    padding: 18px;
+    position: absolute;
+    border-radius: 4px;
+    z-index: 10;
+    box-shadow: 0px 5px 20px -4px rgba(0, 0, 0, 0.48);
+    margin-top: 12px;
+    width: 100%;
+    min-width: 250px;
+    max-width: 300px;
+    display: none;
+}
+
+div.element-description:before {
+    border: 11px solid transparent;
+    content: " ";
+    border-bottom-color: rgba(59, 59, 97, 0.91);
+    border-top: 0;
+    margin-top: -26px;
+    width: 0;
+    display: block;
+    margin-bottom: 10px;
+
+}
