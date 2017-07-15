@@ -21,12 +21,19 @@ $(document).ready(function () {
 
 });
 
+
+var hintTimeout = setTimeout(function () {}, 0);
+
 $(document).on('focus', '[data-description-show=true]', function (el) {
-    obj = $(el.target)
-    obj.parent().find('div.element-description').fadeIn(400);
+    hintTimeout = setTimeout(function () {
+        obj = $(el.target)
+        obj.parent().find('div.element-description').fadeIn(400);
+    }, 300);
+
 })
 
 $(document).on('blur', '[data-description-show=true]', function (el) {
+    clearTimeout(hintTimeout)
     obj = $(el.target)
     obj.parent().find('div.element-description').fadeOut(400);
 })
