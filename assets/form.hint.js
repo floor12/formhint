@@ -2,6 +2,7 @@
  * Created by floor12 on 26.05.2017.
  */
 
+descriptionTimeout = 3000;
 
 $(document).ready(function () {
 
@@ -28,7 +29,7 @@ $(document).on('focus', '[data-description-show=true]', function (el) {
     hintTimeout = setTimeout(function () {
         obj = $(el.target)
         obj.parent().find('div.element-description').fadeIn(400);
-    }, 300);
+    }, descriptionTimeout);
 
 })
 
